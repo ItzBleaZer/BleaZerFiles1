@@ -29,6 +29,7 @@ body{
 
 .main {
     height: 100vh;
+    background: url("img/main.jpg") no-repeat
 }
 .main_wrap {
     display: flex;
@@ -95,10 +96,6 @@ font-family: "Nunito Sans", sans-serif;
 line-height: 1.S;
 }
 
-.about_img{
-    border: 1px solid #3f3f3f;
-
-}
 .skills{
     background: var(--mid-color);
 }
@@ -158,5 +155,37 @@ line-height: 1.S;
     width: 75%;
     background: var(--accent-color);
     height: 100%;
+
+}
+
+.stats{
+  background: var(--accent-color);
+}
+
+.stats_block{
+  color: var(--light-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: ;
+}
+
+.stats_title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.stats_text{
+  font-weight: 500;
+  font-size: 12px;
+  line-height:1.5;
+  grid-area: text;
+}
+
+.stats_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
